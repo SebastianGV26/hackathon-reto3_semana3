@@ -1,11 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
     <title>Document</title>
 </head>
+
 <body>
-    
+    <div class="container">
+        <h1>Checkout</h1>
+        <div>
+            <label for="metodoPago">Payment Method</label>
+            <select name="metodoPago" id="metodoPago">
+                <option value="Visa Ending in 4566">Visa Ending in 4566</option>
+                <option value="American Express Ending in 9122">American Express Ending in 9122</option>
+                <option value="Discover Ending in 9865">Discover Ending in 9865</option>
+            </select>
+        </div>
+        <div class="shipping">
+            <fieldset>
+                <legend>Shipping Method</legend>
+                <div class="radio">
+                    <label for="">
+                        <input type="radio" required id="r1" name="metodo" value="1">FREE - 2 Day Shipping
+                    </label>
+                </div>
+                <div class="radio">
+                    <label for="">
+                        <input type="radio" required id="r2" name="metodo" value="2">Standard Shipping (4 - 5
+                        Bussiness Day)
+                    </label>
+                </div>
+                <div class="radio">
+                    <label for="">
+                        <input type="radio" required id="r3" name="metodo" value="3">FREE - No Rush Shipping (5
+                        Businnes Day)
+                    </label>
+                </div>
+            </fieldset>
+        </div>
+
+        <div class="check">
+            <label for="gif">This is a giff<input class="gif" type="checkbox">
+            </label>
+            <button type="submit">Place Your Order</button>
+        </div>
+    </div>
 </body>
+
 </html>
